@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>forms</title>
+        <style>
+            #forms{
+                width: 500px;
+                padding:40px;
+                background-color:whitesmoke;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .input-item{
+               margin-top: 12px;
+               margin-bottom: 12px;
+               width:100%;
+               padding:10px;
+            
+            }
+        </style>
+    </head>
+    <body style="background-color:lightslategray">
+        <h1 style="text-align:center ;color:black;font-style: italic;">COURSE REGISTRATION FORM</h1>
+        <form id="forms" method="GET">
+            
+            <p>Fullname:</p>
+            <input class="input-item" type="text" name="Fullname" maxlength="20" required><br>
+            <p>Email:</p><input  class="input-item" type="text" name="email"  required><br>
+             <p>Password:</p><input class="input-item" type="password" name="password" minlength="8" maxlength="20" required><br>
+             <p>Confirm Password:</p><input class="input-item" type="password" name="password"minlength="8" maxlength="20" required>
+             <p>Roll Number:</p><input class="input-item" type="text" name="rollnumber" required><br>
+             <p>Date Of Birth</p><input class="input-item" type="date" name="date" required><br> 
+             <div>
+                 <p>Gender:</p>
+                 <input type="radio" name="male" value="male">Male</input>
+                 <input  type="radio" name="female"  value="Female">Female</input>
+                 <input  type="radio" name="other"  value="other">other</input>
+             </div>
+             <div>
+                 <p>Department:</p>
+                 <input class="input-item" list="Department" name="Dep"/>
+                 <datalist id="Department">
+                    <option value="Computer Science And Engineering"></option>
+                    <option value="Mechanical Engineering"></option>
+                    <option value="Information Technology"></option>
+                    <option value="Production Enginneering"></option>
+                    <option value="Electrical And Communication Engineering"></option>
+                    <option value="Electrical And Electronics Engineering"></option>
+                    <option value="Instrumentation Enginneering"></option>
+                 </datalist>
+                 <p>Courses</p>
+                 <input type="checkbox" name="courses" value="courses">Object Oriented Programming In C++</input><br>
+                 <input type="checkbox" name="courses" value="courses">Programming In Java</input><br>
+                 <input type="checkbox" name="courses" value="courses">Big Data Science</input><br>
+                 <input type="checkbox" name="courses" value="courses">Network Essentials</input><br>
+                 <input type="checkbox" name="courses" value="courses">Biology For Engineers</input><br>
+                 <input type="checkbox" name="courses" value="courses">Virtual Instrumentation</input><br>
+                 <input type="checkbox" name="courses" value="courses">Computational Biology</input><br>
+                 <input type="checkbox" name="courses" value="courses">Fundamentals Of Bioengineering</input><br>
+                 <input type="checkbox" name="courses" value="courses">Climate Change And Adaption</input><br>
+                 <input type="checkbox" name="courses" value="courses">Disaster Management And Mitigation</input><br>
+                 <input type="checkbox" name="courses" value="courses">Mechatronics</input><br>
+                 <input type="checkbox" name="courses" value="courses">Energy Efficient Buildings</input><br>
+                 <input type="checkbox" name="courses" value="courses">Cyber Security</input><br>
+                 <input type="checkbox" name="courses" value="courses">Introduction To Web Technology</input><br>
+                 <input type="checkbox" name="courses" value="courses">Cloud Engineering</input><br>
+                 <input type="checkbox" name="courses" value="courses">Programming In C</input><br>
+                 <input type="checkbox" name="courses" value="courses">Programming In C++</input><br>
+             </div>
+             <input class="input-item" type="submit" value="Register">
+        </form>
+    </body>
+</html>
